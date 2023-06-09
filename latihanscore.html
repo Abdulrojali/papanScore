@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>latihan score</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            width: 100%;
+            height: 50vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+        }
+        .btn{
+            width: 80%;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .content1{
+            display: flex;
+            gap: 20px;
+        }
+        .content1 span{
+            font-size: 2em;
+            font-weight: 650;
+        }
+        .contentitem1,.contentitem2{
+            display: flex;
+            flex-direction: column;
+            gap: 5px;
+            justify-content: center;
+            align-items: center;
+        }
+        button,select{
+            display: block;
+            padding: 8px 10px;
+            border-radius: 5px;
+            font-size: 1.1em;
+            font-weight: 250;
+        }
+        .judul{
+            font-size: 1.5em;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+     <h3 class="judul">total score</h3>
+        <div class="content1">
+            <div class="contentitem1">
+                <span id="item1">0</span>
+                <button id="plus1">plus1</button>
+            </div><span>vs</span>
+            <div class="contentitem2">
+                <span id="item2">0</span>
+                <button id="plus2">plus2</button>
+            </div>
+        </div>
+        <div class="btn">
+            <select name="" id="selection">
+                <option value="5">5</option>
+                <option value="10">10</option>
+                <option value="4">4</option>
+                <option value="8">8</option>
+            </select>
+            <button class="reset">reset</button>
+        </div>
+
+    </div>
+   <script src="latihanscore.js"></script>
+</body>
+</html>
